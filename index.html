@@ -3,177 +3,31 @@
 <head>
 	<title>Class Works</title>
 	<style type="text/css">
-		body {
-			margin: 50px;
+		input {
+			display: block;
 		}
 
-		.navigation-bar {
-			text-align: right;
-			background-color: rgb(232,232,232);
-			min-height: 50px;
-			padding-right: 50px;
-			vertical-align: middle;
-			margin-bottom: 50px;
-		}
-
-		nav a {
-			margin: 20px;
-			line-height: 50px;
-			text-decoration: none;
-			color: black;
-		}
-
-		.second-block {
-			text-align: center;
-			background-color: rgb(232,232,232);
-			min-height: 150px;
-			padding-top: 50px;
-			vertical-align: middle;
-			margin-bottom: 50px;
-		}
-
-		.third-block {
-			background-color: rgb(232,232,232);
-			min-height: 150px;
-			padding-top: 50px;
-			vertical-align: middle;
-			margin-bottom: 50px;
-		}
-
-		.third-block .text-image {
-			display: inline-block;
-		}
-
-		.third-block .left-side {
-			display: inline-block;
-			margin-right: 50px;
-			padding-left: 50px;
-			max-width: 500px;
-		}
-
-		.third-block .right-side {
-			display: inline-block;
-		    margin: 50px;
-		    padding-left: 100px;
-		    vertical-align: middle;
-		    margin-top: 0;
-		}
-
-		.third-block .left-side p {
-			word-wrap: break-word;
-		}
-
-		.fourth-block {
-			display: inline-block;
-			background-color: rgb(232,232,232);
-			min-height: 150px;
-			padding-top: 50px;
-			vertical-align: middle;
-			margin-bottom: 50px;
-			width: 100%;
-		}
-
-		.fourth-block .right-side {
-			display: inline-block;
-			margin-left: 150px;
-			max-width: 500px;
-			text-align: right;
-		}
-
-		.fourth-block .left-side {
-			display: inline-block;
-		    margin: 50px;
-		    padding-left: 100px;
-		    vertical-align: middle;
-		    margin-top: 0;
-		}
-
-		footer .add-info {
-			text-align: center;
-			display: inline-block;
-		}
-
-		footer {
-			background-color: rgb(232,232,232);
-			text-align: center;
-		}
-
-		footer .add-info {
-			margin: 0 30px;
+		label {
+			display: block;
 		}
 	</style>
 </head>
 <body>
-	<div class="navigation-bar">
-		<img src="https://image.shutterstock.com/image-vector/city-bites-culinary-concept-logo-260nw-1435872950.jpg" height="50" width="50" align="left">
-		<nav>
-			<a href="/">Test1</a>
-			<a href="/">Test2</a>
-			<a href="/">Test3</a>
-			<a href="/">Test4</a>
-		</nav>
-	</div>
-	<div class="second-block">
-		<h3>Super headline</h3>
-		<p>
-			Some kind of text
-			Some kind of text
-			Some kind of text
-			Some kind of text
-			Some kind of text
-			Some kind of text
-		</p>
-	</div>
-	<div class="third-block">
-		<div class="left-side text-image">
-			<h3>Super headline</h3>
-			<p>
-				Some kind of text
-				Some kind of text
-				Some kind of text
-				Some kind of text
-				Some kind of text
-				Some kind of text
-				Some kind of text
-				Some kind of text
-				Some kind of text
-				Some kind of text
-				Some kind of text
-				Some kind of text
-			</p>
-		</div>
-		<div class="right-side text-image">
-			<img src="https://image.shutterstock.com/image-vector/city-bites-culinary-concept-logo-260nw-1435872950.jpg" height="100" width="100" align="center">
-		</div>
-	</div>
-	<div class="fourth-block">
-		<div class="left-side text-image">
-			<img src="https://image.shutterstock.com/image-vector/city-bites-culinary-concept-logo-260nw-1435872950.jpg" height="100" width="100" align="center">
-		</div>
-		<div class="right-side text-image">
-			<h3>Super headline</h3>
-			<ul>
-				<li>Some kind of text</li>
-				<li>Some kind of text</li>
-				<li>Some kind of text</li>
-			</ul>
-		</div>
-	</div>
-
-<footer>
-  <div class="add-info">
-  	<p>Additional information</p>
-  </div>
-  <div class="add-info">
-  	<p>Additional information</p>
-  </div>
-  <div class="add-info">
-  	<p>Additional information</p>
-  </div>
-  <div class="add-info-last">
-  	<p>Additional information</p>
-  </div>
-</footer>
-	
+	<h2>Registracijos forma:</h2>
+	<form action="" method="POST">
+		<label>First name:</label>
+		<input type="text" name="name">
+		<label>Last name:</label>
+		<input type="text" name="last_name">
+		<label>Email:</label>
+		<input type="email" name="email">
+		<label>Password:</label>
+		<input type="password" name="Password">
+		<label>Age:</label>
+		<input type="number" name="age" maxlength="3">
+		<label>Do you want news?:</label>
+		<input type="checkbox" name="news">
+		<button>Send</button>
+	</form>
 </body>
 </html>
