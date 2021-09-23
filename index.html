@@ -1,35 +1,168 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Class Works</title>
-	<style type="text/css">
-		input {
-			display: block;
-		}
-
-		label {
-			display: block;
-		}
-	</style>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .first {
+            background-color: #E6E5E5;
+            height: 500px;
+        }
+        .squeres {
+            background-color: #E6E5E5;
+            height: 200px;
+        }
+        .new-block {
+            background-color: #E6E5E5;
+            height: 100px;
+        }
+        .bordered-block {
+            border: 1px solid black;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .imgs {
+            background-color: #E6E5E5;
+            height: 150px;
+        }
+        .imgs-text {
+            background-color: #E6E5E5;
+            height: 150px;
+        }
+        .nav-text {
+            background-color: #E6E5E5;
+            height: 100px;
+        }
+        button {
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-	<h2>Registracijos forma:</h2>
-	<form action="" method="POST">
-		<label>First name:</label>
-		<input type="text" name="name">
-		<label>Last name:</label>
-		<input type="text" name="last_name">
-		<label>Email:</label>
-		<input type="email" name="email">
-		<label>Password:</label>
-		<input type="password" name="password">
-		<label>Address:</label>
-		<input type="text" name="address">
-		<label>Age:</label>
-		<input type="number" name="age" maxlength="3">
-		<label>Do you want news?:</label>
-		<input type="checkbox" name="news">
-		<button>Send</button>
-	</form>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <div class="row d-flex flex-row justify-content-start">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="row d-flex flex-row justify-content-center">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>
+<br>
+    <div class="container">
+    <div class="row d-flex flex-row justify-content-around">
+        <div class="col-md-12 d-flex flex-row first">
+            Hello
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row d-flex flex-row justify-content-around">
+        <div class="col-md-3 squeres">
+            Text
+        </div>
+        <div class="col-md-3 squeres">
+            Text
+        </div>
+        <div class="col-md-3 squeres">
+            Text
+        </div>
+    </div>
+</div>
+<br>
+    <div class="container bordered-block">
+        <div class="row d-flex flex-row justify-content-around">
+            <div class="col-md-6 new-block">
+                Block
+            </div>
+            
+        </div>
+        <br>
+        <div class="row d-flex flex-row justify-content-around">
+            <div class="col-md-2 imgs">
+                <img src="">
+            </div>
+            <div class="col-md-2 imgs">
+                <img src="">
+            </div>
+            <div class="col-md-2 imgs">
+                <img src="">
+            </div>
+            <div class="col-md-2 imgs">
+                <img src="">
+            </div>
+        </div>
+        <br>
+        <div class="row d-flex flex-row justify-content-around">
+            <div class="col-md-2 imgs-text">
+                Text
+            </div>
+            <div class="col-md-2 imgs-text">
+                Text
+            </div>
+            <div class="col-md-2 imgs-text">
+                Text
+            </div>
+            <div class="col-md-2 imgs-text">
+                Text
+            </div>
+        </div>
+    </div>
+<br>
+<div class="container">
+    <form action="#">
+        <div class="row d-flex flex-row justify-content-around align-items-center">
+            <div class="col-md-2">
+                <input  type="address" name="address" placeholder="enter address field">
+            </div>
+            <div class="col-md-2">
+                <button>Sign up button</button>
+            </div>
+            <div class="col-md-2 nav-text">
+                navigation text
+            </div>
+            <div class="col-md-2 nav-text">
+                navigation text
+            </div>
+        </div>
+    </form>
+</div>
+<br>
 </body>
 </html>
